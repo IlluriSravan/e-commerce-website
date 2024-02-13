@@ -1,3 +1,44 @@
 .cart-list {
   padding-left: 0px;
 }
+.popup
+ {
+  background-color: aquamarine;
+  color: black;
+  border-radius: 10px;
+  height: 70vh;
+  width: 50vw;
+}
+.pop{
+  background-color: transparent;
+  color: black;
+  border-radius: 10px;
+  
+  width: 40vw;
+}
+.close-button {
+  margin-left: auto;
+  font-size: 30px;
+}
+.method-button {
+  background-color: blanchedalmond;
+  color: black;
+  height: 50px;
+  border-radius: 10px;
+  width: 100px;
+  margin: 20px;
+}
+.methods {
+  display: flex;
+  flex-direction: row;
+}
+.popup {
+  padding: 30px;
+}
+.check {
+  width: 80px;
+  align-self: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+  height: 40px;
+}

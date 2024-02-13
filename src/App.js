@@ -31,6 +31,10 @@ class App extends Component {
     }))
   }
 
+  orderPlaced = () => {
+    this.setState({orderPlaced: true})
+  }
+
   render() {
     const {cartList} = this.state
 
@@ -41,6 +45,8 @@ class App extends Component {
             cartList,
             addCartItem: this.addCartItem,
             deleteCartItem: this.deleteCartItem,
+            orderPlaced: this.orderPlaced,
+            placed: true,
           }}
         >
           <Switch>
@@ -54,7 +60,7 @@ class App extends Component {
             />
             <ProtectedRoute exact path="/cart" component={Cart} />
             <Route path="/not-found" component={NotFound} />
-            <Redirect to="not-found" />
+            <Redirect to="/not-found" />
           </Switch>
         </CartContext.Provider>
       </BrowserRouter>
